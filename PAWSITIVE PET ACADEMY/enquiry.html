@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawsitive Pet Academy | Enquiry & Quote</title>
+</head>
+<body>
+
+    <header>
+        <h1>Course Enquiry & Quote Request</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services & Courses</a></li>
+                <li><a href="enquiry.html">Enquiry & Quote</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Request Information / Calculate Your Fee Quote</h2>
+            <p>Select the courses you are interested in enrolling in to receive a personalized fee structure breakdown.</p>
+
+            <!-- HTML Form for capturing student enquiry and course selection -->
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" required><br><br>
+
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" required><br><br>
+
+                    <label for="user-category">I am a:</label><br>
+                    <select id="user-category" name="user-category">
+                        <option value="owner">Pet Owner</option>
+                        <option value="aspiring-pro">Aspiring Pet Professional</option>
+                        <option value="sitter">Pet Sitter / Walker</option>
+                        <option value="vet-assistant">Veterinary Assistant</option>
+                    </select>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Select Courses (Discounts apply automatically for multiple selections)</legend>
+
+                    <p><strong>6-Month Programmes (R1500 each):</strong></p>
+                    <input type="checkbox" id="c1" name="courses" value="Canine Obedience">
+                    <label for="c1">Canine Obedience Training (R1500)</label><br>
+
+                    <input type="checkbox" id="c2" name="courses" value="Pet Grooming">
+                    <label for="c2">Pet Grooming (R1500)</label><br>
+
+                    <input type="checkbox" id="c3" name="courses" value="Animal Behaviour">
+                    <label for="c3">Animal Behaviour (R1500)</label><br>
+
+                    <input type="checkbox" id="c4" name="courses" value="Pet Business">
+                    <label for="c4">Pet Business Management (R1500)</label><br><br>
+
+                    <p><strong>6-Week Short Courses (R750 each):</strong></p>
+                    <input type="checkbox" id="c5" name="courses" value="Puppy Care">
+                    <label for="c5">Puppy Care (R750)</label><br>
+
+                    <input type="checkbox" id="c6" name="courses" value="Pet First Aid">
+                    <label for="c6">Pet First Aid (R750)</label><br>
+
+                    <input type="checkbox" id="c7" name="courses" value="Dog Walking">
+                    <label for="c7">Basic Dog Walking (R750)</label><br>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Additional Enquiries</legend>
+                    <label for="message">Message / Questions:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40" placeholder="Type your questions here..."></textarea>
+                </fieldset>
+
+                <br>
+                <input type="submit" value="Submit Enquiry & Request Quote">
+                <input type="reset" value="Clear Form">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pawsitive Pet Academy | Durban, KZN</p>
+    </footer>
+
+</body>
+</html>
