@@ -1,10 +1,30 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+* {
     margin: 0;
     padding: 0;
-    background: #f7f4ee;
-    color: #1f1f1f;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1d3557;
+    --secondary-color: #2a9d8f;
+    --accent-color: #f4a261;
+    --background-color: #f7f4ee;
+    --surface-color: #ffffff;
+    --text-color: #1f1f1f;
+    --muted-text: #475569;
+    --border-color: #dbe3ea;
+    --main-font: 'Segoe UI', Arial, sans-serif;
+    --heading-font: 'Segoe UI', Arial, sans-serif;
+    --line-height: 1.6;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+    line-height: var(--line-height);
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 header {
