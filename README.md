@@ -24,7 +24,7 @@ Pawsitive Pet Academy is a small-to-mid-size pet training enterprise founded by 
 * **Semantic Web Architecture:** Built using modern HTML5 tags (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`).
 * **External CSS Styling:** Styled using a central stylesheet (`css/styles.css`) featuring a CSS reset, custom color palettes, typography scaling using relative units (`rem`/`em`), and styling for components like buttons, tables, and form inputs.
 * **Flexible & Grid Layouts:** Utilizes CSS Flexbox for site headers, footers, and navigation bars, alongside CSS Grid for structured multi-column course cards.
-* **Fully Responsive Design:** Implements CSS media queries across desktop (>1024px), tablet (768px–1024px), and mobile (<768px) viewports to guarantee fluid layout scaling and single-column stacking.
+* **Fully Responsive Design:** Implements CSS media queries across desktop, tablet, and mobile viewports to guarantee fluid layout scaling and single-column stacking.
 * **Interactive UI Elements:** Hover, focus, and active pseudo-classes configured on interactive elements like call-to-action buttons, links, and input fields.
 
 ---
