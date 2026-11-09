@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Character set definition and viewport configuration for responsiveness -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pawsitive Pet Academy | Home</title>
+    <title>Pawsitive Pet Academy | Pet Training, Grooming & Animal Care Courses</title>
+    <meta name="description" content="Pawsitive Pet Academy offers pet care, dog training, grooming, first aid, and business courses in Durban.">
+    <meta name="keywords" content="pet training, dog obedience, pet grooming, puppy care, animal behaviour, Durban pet academy">
+    <meta name="author" content="Pawsitive Pet Academy">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- Main Navigation Header -->
     <header>
-        <img src="images/logo.png" alt="Pawsitive Pet Academy Logo" width="180">
-        <h1>Pawsitive Pet Academy</h1>
-        <p>Empowering Pet Owners & Animal Professionals in Durban</p>
-        
-        <!-- Site Main Navigation Menu -->
+        <div class="header-container">
+            <img src="images/logo.png" alt="Pawsitive Pet Academy Logo" class="site-logo">
+            <div class="header-text">
+                <h1>Pawsitive Pet Academy</h1>
+                <p>Empowering Pet Owners & Animal Professionals in Durban</p>
+            </div>
+        </div>
+
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html">Services & Courses</a></li>
                 <li><a href="enquiry.html">Enquiry & Quote</a></li>
@@ -27,46 +31,48 @@
         </nav>
     </header>
 
-    <!-- Main Content Area -->
     <main>
-        <!-- Hero Section -->
-        <section>
+        <section class="hero-section">
             <h2>Welcome to Durban's Premier Pet Care & Training Academy</h2>
-            <img src="images/hero-banner.jpg" alt="Dogs training with a professional trainer" width="600">
+            <img src="images/logo.png" alt="Pawsitive Pet Academy logo" class="hero-image">
             <p>Founded by Sarah Smith in 2023, Pawsitive Pet Academy provides practical animal care education, obedience training, and pet business skills designed for pet owners, aspiring professionals, and animal lovers.</p>
-            <p><a href="services.html">Explore Our Courses</a> | <a href="enquiry.html">Calculate Course Quote</a></p>
+            <div class="cta-row">
+                <a href="services.html" class="btn btn-primary">Explore Our Courses</a>
+                <a href="enquiry.html" class="btn btn-secondary">Enquiry & Quote</a>
+            </div>
         </section>
 
-        <!-- Highlights & Special Offers -->
         <section>
             <h2>Why Choose Pawsitive Pet Academy?</h2>
-            <ul>
+            <ul class="feature-list">
                 <li><strong>Practical Learning:</strong> Hands-on training modules tailored for real-world animal care.</li>
-                <li><strong>Flexible Options:</strong> Choose between 6-week short practical courses or comprehensive 12-week classroom programmes.</li>
-                <li><strong>Multi-Course Discounts:</strong> Save up to 15% when enrolling in multiple courses!</li>
+                <li><strong>Flexible Options:</strong> Choose between 6-week short practical courses or comprehensive 6-month programmes.</li>
+                <li><strong>Multi-Course Discounts:</strong> Save up to 15% when enrolling in multiple courses.</li>
             </ul>
         </section>
 
-        <!-- Featured Course Preview -->
         <section>
             <h2>Featured Training Programmes</h2>
-            <article>
-                <h3>Canine Obedience Training (12 Weeks / 6-Month Programme)</h3>
-                <p>Learn effective dog obedience techniques including basic commands, positive reinforcement, and behaviour modification. Fee: R1500.</p>
+
+            <article class="course-card">
+                <h3>Canine Obedience Training</h3>
+                <p class="price">Fee: R1500</p>
+                <p>Learn effective dog obedience techniques including basic commands, positive reinforcement, and behaviour modification.</p>
             </article>
 
-            <article>
-                <h3>Pet First Aid (6-Week Short Course)</h3>
-                <p>Essential emergency care skills covering minor injuries, CPR basics, heatstroke, and poison awareness. Fee: R750.</p>
+            <article class="course-card">
+                <h3>Pet First Aid</h3>
+                <p class="price">Fee: R750</p>
+                <p>Essential emergency care skills covering minor injuries, CPR basics, heatstroke, and poison awareness.</p>
             </article>
         </section>
     </main>
 
-    <!-- Page Footer -->
-    <footer>
+    <footer class="page-footer">
         <p>&copy; 2026 Pawsitive Pet Academy. All Rights Reserved.</p>
         <p>Located in Durban, KwaZulu-Natal | Email: info@pawsitivepet.co.za</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

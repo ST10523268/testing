@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pawsitive Pet Academy | Contact Us</title>
+    <title>Contact Us | Pawsitive Pet Academy</title>
+    <meta name="description" content="Contact Pawsitive Pet Academy for course information, support, or general enquiries in Durban.">
+    <meta name="keywords" content="contact pet academy, Durban pet training contact, dog training contact, pet academy support">
+    <meta name="author" content="Pawsitive Pet Academy">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Contact Pawsitive Pet Academy</h1>
+        <div class="header-container">
+            <img src="images/logo.png" alt="Pawsitive Pet Academy Logo" class="site-logo">
+            <div class="header-text">
+                <h1>Pawsitive Pet Academy</h1>
+                <p>Empowering Pet Owners & Animal Professionals in Durban</p>
+            </div>
+        </div>
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html">Services & Courses</a></li>
                 <li><a href="enquiry.html">Enquiry & Quote</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -24,51 +34,62 @@
     <main>
         <section>
             <h2>Get In Touch</h2>
-            <p>Have questions about our course schedules or campus training grounds? Reach out to us below.</p>
+            <p>Have questions about our programmes or training facilities? Reach out to us below.</p>
 
-            <h3>Academy Contact Details</h3>
-            <p><strong>Founder:</strong> Sarah Smith</p>
-            <p><strong>Phone:</strong> +27 (0)31 555 1234</p>
-            <p><strong>Email:</strong> admin@pawsitivepet.co.za</p>
+            <div class="contact-details">
+                <p><strong>Founder:</strong> Sarah Smith</p>
+                <p><strong>Phone:</strong> +27 (0)31 555 1234</p>
+                <p><strong>Email:</strong> info@pawsitivepet.co.za</p>
+            </div>
 
-            <h3>Primary Campus Location</h3>
             <address>
                 Pawsitive Pet Academy Training Centre<br>
                 124 Florida Road, Morningside<br>
                 Durban, 4001<br>
                 KwaZulu-Natal, South Africa
             </address>
-
-            <h3>Operating Hours</h3>
-            <p>Monday – Friday: 08:00 – 16:30<br>
-               Saturday: 08:30 – 13:00 (Practical Training sessions)<br>
-               Sunday & Public Holidays: Closed</p>
         </section>
 
-        <!-- General Feedback Form -->
         <section>
             <h2>Send Us a Direct Message</h2>
-            <form action="#" method="post">
-                <label for="sender-name">Your Name:</label><br>
-                <input type="text" id="sender-name" name="sender-name" required><br><br>
 
-                <label for="sender-email">Your Email:</label><br>
-                <input type="email" id="sender-email" name="sender-email" required><br><br>
+            <form id="contactForm" novalidate>
+                <div class="form-feedback" hidden aria-live="polite"></div>
 
-                <label for="subject">Subject:</label><br>
-                <input type="text" id="subject" name="subject" required><br><br>
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <small class="error-message"></small>
+                </div>
 
-                <label for="comments">Message:</label><br>
-                <textarea id="comments" name="comments" rows="4" cols="40" required></textarea><br><br>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <small class="error-message"></small>
+                </div>
 
-                <input type="submit" value="Send Message">
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Message:</label>
+                    <textarea id="comments" name="comments" rows="5" required></textarea>
+                    <small class="error-message"></small>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Pawsitive Pet Academy | Durban</p>
+    <footer class="page-footer">
+        <p>&copy; 2026 Pawsitive Pet Academy. All Rights Reserved.</p>
+        <p>Located in Durban, KwaZulu-Natal | Email: info@pawsitivepet.co.za</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
